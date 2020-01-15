@@ -1,6 +1,6 @@
 {
   "name": "@pnpm/colorize-semver-diff",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Makes a colorful semver diff",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
