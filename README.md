@@ -19,9 +19,33 @@ import colorizeSemverDiff from '@pnpm/colorize-semver-diff'
 
 console.log(colorizeSemverDiff({
   change: 'feature',
-  diff: [['2'], ['1', '0']]
+  diff: [['2'], ['1', '0', 'rc', '1']]
 }))
 ```
+
+## API
+
+### colorizeSemverDiff(semverDiff)
+
+Returns a string with ANSI colors.
+
+#### semverDiff.change
+
+type: `unknown`, `breaking`, `feature`, `fix`
+
+#### semverDiff.diff[0]
+
+type: `string[]`
+
+An array of version parts that are unchanged. For instance, in a diff between
+`1.0.0` and `1.2.0` the unchanged part will be `['1']`.
+
+#### semverDiff.diff[1]
+
+type: `string[]`
+
+An array of version parts that are changed. For instance, in a diff between
+`1.0.0` and `1.2.0` the changed part will be `['2', '0']`.
 
 ## Related
 
