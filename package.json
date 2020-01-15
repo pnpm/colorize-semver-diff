@@ -1,0 +1,49 @@
+{
+  "name": "@pnpm/colorize-semver-diff",
+  "version": "0.0.0",
+  "description": "Makes a colorful semver diff",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "lint": "tslint -c tslint.json src/**/*.ts test.ts",
+    "test": "pnpm run lint && ts-node test --type-check",
+    "tsc": "rimraf lib && tsc",
+    "prepublishOnly": "pnpm run tsc"
+  },
+  "repository": "https://github.com/pnpm/colorize-semver-diff",
+  "keywords": [
+    "semver",
+    "diff",
+    "color"
+  ],
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "z@kochan.io",
+    "url": "https://www.kochan.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnpm/colorize-semver-diff/issues"
+  },
+  "homepage": "https://github.com/pnpm/colorize-semver-diff#readme",
+  "devDependencies": {
+    "@pnpm/tsconfig": "^1.0.0",
+    "@pnpm/tslint-config": "^1.0.0",
+    "@types/node": "^12.12.21",
+    "@types/tape": "^4.2.33",
+    "rimraf": "^3.0.0",
+    "tape": "^4.12.0",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}
