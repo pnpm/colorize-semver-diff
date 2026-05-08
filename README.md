@@ -2,9 +2,7 @@
 
 > Makes a colorful semver diff
 
-<!--@shields('npm', 'travis')-->
-[![npm version](https://img.shields.io/npm/v/@pnpm/colorize-semver-diff.svg)](https://www.npmjs.com/package/@pnpm/colorize-semver-diff) [![Build Status](https://img.shields.io/travis/pnpm/colorize-semver-diff/master.svg)](https://travis-ci.org/pnpm/colorize-semver-diff)
-<!--/@-->
+[![npm version](https://img.shields.io/npm/v/@pnpm/colorize-semver-diff.svg)](https://www.npmjs.com/package/@pnpm/colorize-semver-diff)
 
 ## Installation
 
@@ -15,7 +13,7 @@
 ## Usage
 
 ```ts
-import colorizeSemverDiff from '@pnpm/colorize-semver-diff'
+import { colorizeSemverDiff } from '@pnpm/colorize-semver-diff'
 
 console.log(colorizeSemverDiff({
   change: 'feature',
